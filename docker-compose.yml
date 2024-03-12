@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  puppeteer-pdf-generator:
+    build:
+      context: .
+    ports:
+      - "3006:3006"
