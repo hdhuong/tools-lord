@@ -2,44 +2,25 @@
 
 # Function for the first set of database connections
 restore_databases_set1() {
-  SOURCE_HOST="10.1.14.132"
-  SOURCE_PORT="27018"
-  SOURCE_USERNAME="admin"
-  SOURCE_PASSWORD="SnP202211"
+  SOURCE_HOST=""
+  SOURCE_PORT=""
+  SOURCE_USERNAME=""
+  SOURCE_PASSWORD=""
 
-  TARGET_HOST="10.1.26.63"
-  TARGET_PORT="6968"
-  TARGET_USERNAME="admin"
-  TARGET_PASSWORD="snp123456"
+  TARGET_HOST=""
+  TARGET_PORT=""
+  TARGET_USERNAME=""
+  TARGET_PASSWORD=""
 
-  SOURCE_DATABASES=("smc_stg_cost_center" "smc_stg_file_watcher" "sale-order-instruction" 
-  "smc_stg_production_order" "invoice" "smc_stg_item_packing" 
-  "smc_stg_item-stock-planning" "smc_stg_work_order" "smc_stg_worker_salary" "smc_stg_mms")
+  SOURCE_DATABASES=()
 
-  TARGET_DATABASES=("cost-centers" "file-watchers" "sale-order-instructions" "production-orders" "invoices" 
-  "item-packings" "item-stock-plannings" "work-orders" "worker-salary" "mms")
+  TARGET_DATABASES=()
   
   execute_restore
 }
 
 # Function for the second set of database connections
 restore_databases_set2() {
-  SOURCE_HOST="10.1.14.47"
-  SOURCE_PORT="27018"
-  SOURCE_USERNAME="admin"
-  SOURCE_PASSWORD="SnP202212"
-
-  TARGET_HOST="10.1.26.63"
-  TARGET_PORT="6968"
-  TARGET_USERNAME="admin"
-  TARGET_PASSWORD="snp123456"
-
-  SOURCE_DATABASES=("demo_senko_cost_center" "demo_senko_file_watcher" "demo_senko_sale_order_instruction" 
-  "demo_senko_production_order" "demo_senko_invoice" "demo_senko_item_packing" 
-  "demo_senko_item_stock_planning" "demo_senko_work_order" "demo_senko_worker_salary" "demo_senko_mms")
-
-  TARGET_DATABASES=("cost-centers" "file-watchers" "sale-order-instructions" "production-orders" "invoices" 
-  "item-packings" "item-stock-plannings" "work-orders" "worker-salary" "mms")
 
   execute_restore
 }

@@ -11,18 +11,18 @@ OUTPUT_DIR="/Users/hdhuong/Documents/workspace/dbdump/postgres"
 
 # PostgreSQL local connection details
 LOCAL_DB_HOST="localhost"
-LOCAL_DB_PORT="5535"
+LOCAL_DB_PORT=""
 LOCAL_DB_USER="postgres"
-LOCAL_DB_PASSWORD="snp@123456"
+LOCAL_DB_PASSWORD=""
 
 # Path to your local pg_dump and psql executables
 PG_DUMP_PATH="/usr/local/bin/pg_dump"
 PSQL_PATH="/usr/local/bin/psql"
 
 # Define database sets
-DB_SET_1=("10.1.14.47" "5434" "postgres" "SnP202212" "demo_senko_user" "demo_senko_item" "demo_senko_plan" "demo_senko_produce" "demo_senko_sale" "demo_senko_warehouse")
-DB_SET_2=("10.1.14.132" "5434" "postgres" "SnP202211" "smc_stg_user" "smc_stg_item" "smc_stg_plan" "smc_stg_produce" "smc_stg_sale" "smc_stg_warehouse")
-TARGET_DATABASES=("smc_user" "smc_item" "smc_plan" "smc_produce" "smc_sale" "smc_warehouse")
+DB_SET_1=()
+DB_SET_2=()
+TARGET_DATABASES=("" "" "" "" "" "")
 
 # Ensure the output directory exists, create it if not
 mkdir -p "$OUTPUT_DIR"
