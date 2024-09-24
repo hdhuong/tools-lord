@@ -1,5 +1,7 @@
-const { Client } = require("pg");
-const ExcelJS = require("exceljs");
+import pkg from "pg";
+import ExcelJS from "exceljs";
+
+const { Client } = pkg;
 
 async function exportPostgreSQLSchemaToExcel(connectionConfig, excelFilePath) {
   const client = new Client(connectionConfig);
@@ -108,7 +110,7 @@ async function getTableSchema(client, tableName) {
 const connectionConfig = {
   user: "postgres",
   host: "localhost",
-  database: "smc_item",
+  database: "fujix_loss",
   password: "snp@123456",
   port: 5535,
 };
