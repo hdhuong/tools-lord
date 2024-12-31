@@ -19,6 +19,6 @@ function convertExcelToCSV(excelFilePath, csvFilePath) {
 }
 
 // Example usage
-const excelFilePath = "bom_details.xlsx";
-const csvFilePath = "bomDetails.csv";
+const excelFilePath = "../../../Downloads/bom_producing_step_details.xlsx";
+const csvFilePath = "../../SMC-data/bomPsDetails0411.csv";
 convertExcelToCSV(excelFilePath, csvFilePath);

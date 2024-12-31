@@ -2,7 +2,7 @@ const fs = require("fs");
 const XLSX = require("xlsx");
 
 // Load the Excel file
-const excelFileName = "MKT-translation_JP.xlsx";
+const excelFileName = "../../../Downloads/Output_Formula_Node.xlsx";
 const workbook = XLSX.readFile(excelFileName);
 
 // Assuming the first sheet contains your data
@@ -11,7 +11,7 @@ const worksheet = workbook.Sheets[sheetName];
 
 // Convert the worksheet to an array of objects
 const rawData = XLSX.utils.sheet_to_json(worksheet, {
-  header: ["Key", "Value"],
+  header: ["Code", "Name", "Jp Name"],
 });
 
 // Convert flat data to nested JSON structure
